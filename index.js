@@ -1,3 +1,6 @@
+const express = require('express');
+const app = express();
+
 const { 
   Client, 
   GatewayIntentBits, 
@@ -193,4 +196,12 @@ client.on('interactionCreate', async interaction => {
 
 });
 
-client.login(process.env.TOKEN);
+app.get('/', (req, res) => {
+  res.send('ALPHA bot running 🚀');
+});
+
+app.listen(3000, () => {
+  console.log('Server running');
+});
+
+client.login(process.env.TOKEN);bv     
