@@ -204,4 +204,4 @@ app.listen(3000, () => {
   console.log('Server running');
 });
 
-client.login(process.env.TOKEN);bv     
+client.login(process.env.TOKEN);
